@@ -2,3 +2,8 @@
     width: 20px;
     height: auto;
 }
+
+.productImage {
+    width: auto;
+    height: 50px;
+}

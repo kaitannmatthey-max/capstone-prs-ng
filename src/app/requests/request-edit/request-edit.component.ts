@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Request } from 'src/app/model/request';
 
 @Component({
   selector: 'app-request-edit',

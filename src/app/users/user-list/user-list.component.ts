@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { User } from 'src/app/model/user';
 
 @Component({
   selector: 'app-user-list',
@@ -7,25 +8,25 @@ import { Component } from '@angular/core';
 })
 export class UserListComponent {
   pageTitle: string = "Users List"
-  users: any[] = [
+  users: User[] = [
     {
       "id": 0,
-      "username": "kmatthey",
+      "userName": "kmatthey",
       "password": "p@55word",
-      "firstname": "Kait",
-      "lastname": "Matthey",
-      "phone": "513-525-7229",
+      "firstName": "Kait",
+      "lastName": "Matthey",
+      "phoneNumber": "513-525-7229",
       "email": "kaitannmatthey@gmail.com",
       "isReviewer": true,
       "isAdmin": false
     },
     {
       "id": 1,
-      "username": "admin",
+      "userName": "admin",
       "password": "admin",
-      "firstname": "Admin",
-      "lastname": "Test",
-      "phone": "513-555-0123",
+      "firstName": "Admin",
+      "lastName": "Test",
+      "phoneNumber": "513-555-0123",
       "email": "admin@prs.com",
       "isReviewer": true,
       "isAdmin": true

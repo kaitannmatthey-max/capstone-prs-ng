@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { User } from 'src/app/model/user';
 
 @Component({
   selector: 'app-user-detail',
@@ -7,13 +8,13 @@ import { Component } from '@angular/core';
 })
 export class UserDetailComponent {
   pageTitle: string = "User Detail"
-  user: any = {
+  user: User = {
     "id": 0,
-    "username": "kmatthey",
+    "userName": "kmatthey",
     "password": "p@55word",
-    "firstname": "Kait",
-    "lastname": "Matthey",
-    "phone": "513-525-7229",
+    "firstName": "Kait",
+    "lastName": "Matthey",
+    "phoneNumber": "513-525-7229",
     "email": "kaitannmatthey@gmail.com",
     "isReviewer": true,
     "isAdmin": false

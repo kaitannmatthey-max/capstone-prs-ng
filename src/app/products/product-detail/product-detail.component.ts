@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Product } from 'src/app/model/product';
 
 @Component({
   selector: 'app-product-detail',
@@ -7,5 +8,23 @@ import { Component } from '@angular/core';
 })
 export class ProductDetailComponent {
   pageTitle: string = "Product Detail"
-  product: any = { "id": 1, "partNumber": "CCC-1234", "name": "Coca-Cola Classic 40 pack", "price": 8.99, "unit": "each", "photoPath": null, "vendor": { "id": 1, "code": "CODE-1234", "name": "Wally World", "address": "123 Capitalism Lane", "city": "Cincinnati", "state": "OH", "zip": "45202", "phone": "5135551234", "email": "customercare@wallyworld.net" } }
+  product: Product = { 
+    "id": 0, 
+    "partNumber": "0085080800500", 
+    "name": "Moon Cheese™ Cheddar Believe It Crunchy Snacks", 
+    "price": 4.49, 
+    "unit": "each", 
+    "photoPath": "../../../assets/moon-cheese.jpg", 
+    "vendor": {
+        "id": 0,
+        "code": "KR",
+        "name": "Kroger",
+        "address": "1014 Vine St",
+        "city": "Cincinnati",
+        "state": "OH",
+        "zip": "45202",
+        "phoneNumber": "1-800-576-4377",
+        "email": "contact@kroger.com"
+      }
+  } 
 }

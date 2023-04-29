@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Vendor } from 'src/app/model/vendor';
 
 @Component({
   selector: 'app-vendor-list',
@@ -7,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class VendorListComponent {
   pageTitle: string = "Vendor List"
-  vendors: any[] = [
+  vendors: Vendor[] = [
     {
       "id": 0,
       "code": "KR",
@@ -16,7 +17,7 @@ export class VendorListComponent {
       "city": "Cincinnati",
       "state": "OH",
       "zip": "45202",
-      "phone": "1-800-576-4377",
+      "phoneNumber": "1-800-576-4377",
       "email": "contact@kroger.com"
     },
     {
@@ -27,7 +28,7 @@ export class VendorListComponent {
       "city": "Seattle",
       "state": "WA",
       "zip": "98109",
-      "phone": "1-888-280-4331",
+      "phoneNumber": "1-888-280-4331",
       "email": "contact@amazon.com"
     },
     {
@@ -38,7 +39,7 @@ export class VendorListComponent {
       "city": "Seattle",
       "state": "WA",
       "zip": "98134",
-      "phone": "206-447-1575",
+      "phoneNumber": "206-447-1575",
       "email": "contact@starbucks.com"
     }
   ]
