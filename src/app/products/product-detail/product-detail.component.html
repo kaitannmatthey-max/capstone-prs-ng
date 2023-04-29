@@ -1,2 +1,54 @@
 <app-menu></app-menu>
-<p>product-detail works!</p>
+<table class="table table-sm">
+    <tr>
+        <td>Photo Link:</td>
+        <td>
+            <!-- <input [(ngModel)]="product.photoPath" class="rounded" type="text"> -->
+            {{product.photoPath}}
+        </td>
+    </tr>
+    <tr>
+        <td>Part Number:</td>
+        <td>
+            <!-- <input [(ngModel)]="product.partNumber" class="rounded" type="text"> -->
+            {{product.partNumber}}
+        </td>
+    </tr>
+    <tr>
+        <td>Name:</td>
+        <td>
+            <!-- <input [(ngModel)]="product.name" class="rounded" type="text"> -->
+            {{product.name}}
+        </td>
+    </tr>
+    <tr>
+        <td>Vendor:</td>
+        <td>
+            <!-- <select [(ngModel)]="product.vendor" class="rounded">
+                <option *ngFor="let vendor of vendors" [ngValue]="vendor">
+                    {{"(" + vendor.code + ") " + vendor.name}}
+                </option>
+            </select> -->
+            {{product.vendor.name}}
+        </td>
+    </tr>
+    <tr>
+        <td>Unit:</td>
+        <td>
+            <!-- <input [(ngModel)]="product.unit" class="rounded" type="text"> -->
+            {{product.unit}}
+        </td>
+    </tr>
+    <tr>
+        <td>Price:</td>
+        <td>
+            <!-- <input [(ngModel)]="product.price" class="rounded" type="number"> -->
+            {{product.price}}
+        </td>
+    </tr>
+</table>
+
+<button routerLink="/product/edit/{{product.id}}">Edit</button>
+<button>Delete</button>
+
+<app-footer></app-footer>

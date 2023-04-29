@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./user-create.component.css']
 })
 export class UserCreateComponent {
-
+  pageTitle: string = "Create New User"
 }
