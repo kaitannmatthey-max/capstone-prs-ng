@@ -18,7 +18,7 @@
         <td>Phone Number:</td>
         <td>
             <!-- <input [(ngModel)]="user.phoneNumber" class="rounded" type="text" disabled> -->
-            {{user.phoneNumber}}
+            {{user.phone}}
         </td>
     </tr>
     <tr>
@@ -32,7 +32,7 @@
         <td>Username:</td>
         <td>
             <!-- <input [(ngModel)]="user.userName" class="rounded" type="text" disabled> -->
-            {{user.userName}}
+            {{user.username}}
         </td>
     </tr>
     <tr>
@@ -53,6 +53,6 @@
 </table>
 
 <button routerLink="/user/edit/{{user.id}}">Edit</button>
-<button>Delete</button>
+<button (click)="delete()">Delete</button>
 
 <app-footer></app-footer>

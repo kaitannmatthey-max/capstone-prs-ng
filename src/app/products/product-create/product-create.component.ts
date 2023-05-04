@@ -7,5 +7,5 @@ import { Product } from 'src/app/model/product';
   styleUrls: ['./product-create.component.css']
 })
 export class ProductCreateComponent {
-
+  product: Product = new Product();
 }

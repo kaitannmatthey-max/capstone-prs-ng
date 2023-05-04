@@ -42,48 +42,10 @@
     </tr> -->
 </table>
 
-<h2>Line Items</h2>
-    <table class="table">
-        <tr>
-            <th>Part Number:</th>
-            <th>Product Description:</th>
-            <th>Vendor:</th>
-            <th>Price:</th>
-            <th>Quantity:</th>
-            <th>Total:</th>
-        </tr>
-        <!-- <tr *ngFor="let lineItem of lineItems">
-            <td>{{lineItem.product.partNumber}}</td>
-            <td>{{lineItem.product.name}}</td>
-            <td>{{lineItem.product.vendor.name}}</td>
-            <td>{{"$" + lineItem.product.price}}</td>
-            <td>{{lineItem.quantity}}</td>
-            <td>{{"$" + lineItem.quantity * lineItem.product.price}}</td>
-        </tr>
-        <tr *ngIf="lineItems.length == 0" style="background-color: lightpink;">
-            <td colspan="7" align="center">No Line Items Yet!</td>
-        </tr>
-        <tr *ngIf="addNew">
-            <td colspan="7">
-                <app-line-item-create></app-line-item-create>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="4"></td>
-            <td>Subtotal:</td>
-            <td>{{request.total | currency}}</td>
-        </tr>
-        <tr>
-            <td colspan="4"></td>
-            <td>Tax:</td>
-            <td>{{(request.total * localTax) | currency}}</td>
-        </tr>
-        <tr>
-            <td colspan="4"></td>
-            <td>Total:</td>
-            <td>{{((request.total * localTax) + request.total) | currency}}</td>
-        </tr> -->
-    </table>
+<app-line-item-list></app-line-item-list>
+
+    <br>
+    <br>
 
     <p>Reason for Rejection: </p>
     <input type="text">

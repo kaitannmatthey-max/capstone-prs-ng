@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { ProductListComponent } from './products/products-list/products-list.component';
@@ -25,6 +27,10 @@ import { RequestDetailComponent } from './requests/request-detail/request-detail
 import { RequestReviewComponent } from './requests/request-review/request-review.component';
 import { ReviewDetailComponent } from './requests/review-detail/review-detail.component';
 import { AppRoutingModule } from './app-routing.module';
+import { LineItemListComponent } from './line-items/line-item-list/line-item-list.component';
+import { LineItemDetailComponent } from './line-items/line-item-detail/line-item-detail.component';
+import { LineItemEditComponent } from './line-items/line-item-edit/line-item-edit.component';
+import { LineItemCreateComponent } from './line-items/line-item-create/line-item-create.component';
 
 @NgModule({
   declarations: [
@@ -50,11 +56,17 @@ import { AppRoutingModule } from './app-routing.module';
     RequestEditComponent,
     RequestDetailComponent,
     RequestReviewComponent,
-    ReviewDetailComponent
+    ReviewDetailComponent,
+    LineItemListComponent,
+    LineItemDetailComponent,
+    LineItemEditComponent,
+    LineItemCreateComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -21,11 +21,11 @@ export class RequestListComponent {
       "total": 300,
       "user": {
         "id": 0,
-        "userName": "kmatthey",
+        "username": "kmatthey",
         "password": "p@55word",
         "firstName": "Kait",
         "lastName": "Matthey",
-        "phoneNumber": "513-525-7229",
+        "phone": "513-525-7229",
         "email": "kaitannmatthey@gmail.com",
         "isReviewer": true,
         "isAdmin": false

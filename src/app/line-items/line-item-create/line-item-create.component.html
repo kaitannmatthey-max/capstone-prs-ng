@@ -1,0 +1,60 @@
+<app-menu></app-menu>
+
+<table>
+    <tr>
+        <td>Submitted Date:</td>
+        <td>
+            {{request.submittedDate}}
+        </td>
+    </tr>
+    <tr>
+        <td>Date Needed:</td>
+        <td>
+            {{request.dateNeeded}}
+        </td>
+    </tr>
+    <tr>
+        <td>User:</td>
+        {{request.user.username}}
+    </tr>
+    <tr>
+        <td>Description</td>
+        <td>
+           {{request.description}}
+        </td>
+    </tr>
+    <tr>
+        <td>Justification:</td>
+        <td>
+            {{request.justification}}
+        </td>
+    </tr>
+    <tr>
+        <td>Delivery Mode:</td>
+        {{request.deliveryMode}}
+    </tr>
+    <tr>
+        <td>Status:</td>
+        {{request.status}}
+    </tr>
+
+    <br>
+    <br>
+
+    <tr>
+        <select name="products" id="products">
+            <!-- <option value="product" *ngFor="let lineItem of products">{{lineItem.name}}</option> -->
+            <option value="test">{{products[0].name}}</option>
+        </select>
+    </tr>
+
+    <br>
+    <br>
+
+    <tr>
+        <td>Quantity: </td>
+        <td><input type="text" [(ngModel)]="lineItem.quantity"></td>
+    </tr>
+</table>
+<button>Save</button>
+<app-footer></app-footer>
